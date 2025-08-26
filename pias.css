@@ -2,3 +2,48 @@ header{
     background-color: brown;
     height: 300px;
 }
+main{
+    height: 700px;
+    background-color: dimgray;
+
+}
+.card{
+   /* border: red solid 2px; */
+   background-color: rgb(255, 255, 255);
+   height: auto;
+   width: 400px;
+   margin: 10px;
+   padding: 10px;
+   color: black;
+   border-radius: 5px;
+   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+   text-align: center;
+   display: flex;
+   justify-content: end;
+   align-items: center;
+   flex-direction: column;
+}
+.card:hover{
+   box-shadow: inset 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.botao{
+   border: 2px red;
+   border-radius: 5px;
+   width: 200px;
+   color: red;
+   font-size: large;
+   
+}
+/* muda cor do botao e do texto */
+
+.botao:hover{
+   color: white;
+   background-color: red;
+}
+ .produtos{
+   background-color: dimgray;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+}

@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    text-align: center;
+ }
+header{
+    background-color: brown;
+    height: auto;
+}
+main{
+    background-color: dimgray;
+    height: 2400px;
+}
+.menu{
+    background-color: aliceblue;
+    padding: 15px;
+ }
+ .menu a{
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    transition: 0.9s;
+    padding: 5ṕx;
+ }
+ .menu a:hover{
+    color: black;
+    text-decoration: underline;
+    background-color: darkred;
+    border-radius: 3px;
+ }
+ .card{
+    /* border: red solid 2px; */
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    width: 400px;
+    margin: 10px;
+    padding: 5px;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+ }
+ .card:hover{
+    box-shadow: inset 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+ }
+ .botao{
+    border: 2px red;
+    border-radius: 5px;
+    width: 200px;
+    color: red;
+    font-size: large;
+    
+ }
+ .games{
+    background-color: dimgray;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+ }
+ /* muda cor do botao e do texto */
+ 
+ .botao:hover{
+    color: white;
+    background-color: red;
+ }
+ 
+ .menu li{
+    display: inline;
+    padding: 25px;
+ }
+ .logo{
+    width: 210px;
+ }
+ .produtocard{
+    width: 400px;
+ }

@@ -36,9 +36,9 @@ main{
  .card{
     /* border: red solid 2px; */
     background-color: rgb(255, 255, 255);
-    height: auto;
-    width: 400px;
-    margin: 10px;
+    height: 200px;
+    width: 300px;
+    margin: 15px;
     padding: 5px;
     color: black;
     border-radius: 5px;
@@ -81,5 +81,6 @@ main{
     width: 210px;
  }
  .produtocard{
-    width: 400px;
+    width: 310px;
+    height: 255px;
  }

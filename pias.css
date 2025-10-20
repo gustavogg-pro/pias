@@ -80,4 +80,5 @@ main{
 }
 .logo{
    width: 210px;
+   border-radius: 25%;
 }

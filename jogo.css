@@ -14,6 +14,12 @@ main{
     background-color: dimgray;
     height: 2400px;
 }
+footer{
+   display: flex;
+   height: 250px;
+   color: white ;
+   background-color: black;
+}
 .menu{
    background-color: aliceblue;
    padding: 15px;

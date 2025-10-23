@@ -15,6 +15,12 @@ main{
     background-color: dimgray;
 
 }
+footer{
+   display: flex;
+   height: 250px;
+   color: white ;
+   background-color: black;
+}
 .card{
    /* border: red solid 2px; */
    background-color: rgb(255, 255, 255);
@@ -81,4 +87,8 @@ main{
 .logo{
    width: 210px;
    border-radius: 25%;
+}
+.video{
+    display: flex;
+    padding: 35px;
 }

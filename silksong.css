@@ -43,8 +43,11 @@ footer{
 .botao{
    border: 2px red;
    border-radius: 5px;
+   text-align: center;
+   height: 30px;
    width: 200px;
-   color: red;
+   color: white;
+   background-color: red;
    font-size: large;
    
 }
@@ -52,7 +55,7 @@ footer{
 
 .botao:hover{
    color: white;
-   background-color: red;
+   background-color: darkred;
 }
 .games{
    background-color: dimgray;
@@ -89,18 +92,49 @@ footer{
    border-radius: 25%;
 }
 .video{
-   display: flex;
    padding: 25px;
+}
+.sobre{
+   display: flex;
+   text-align: start;
+   font-family: Arial, Helvetica, sans-serif;
+   height: auto;
+   width: 1800px;
+   background-color: white;
+   padding: 20px;
+   border-radius: 25px;
+}
+.labubu{
+   display: flex;
+   margin: 15px;
+   padding: 15px;
+
+}
+.nome{
+   color: white;
 }
 .compra{
    display: flex;
-   height: 400px;
-   width: auto;
+   width: 700px;
+   height: 200px;
    background-color: white;
-   justify-content: flex-end;
-   padding: 20px;
-   
-   
+   margin: 15px;
+   padding: 15px;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   flex-direction: column;
+   border-radius: 15px;
 
+  
+}
+.bobbiegoods{
+   display: flex;
+   width: 1250px;
    
+   
+   
+}
+.gameimg{
+   width: 400px;
 }

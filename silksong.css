@@ -11,7 +11,7 @@ body{
    text-align: center;
 }
 main{
-    height: 1400px;
+    height:1700px;
     background-color: dimgray;
 
 }
@@ -102,7 +102,8 @@ footer{
    width: 1800px;
    background-color: white;
    padding: 20px;
-   border-radius: 25px;
+   box-shadow: 2px 2px 2px 1px;
+   
 }
 .labubu{
    display: flex;
@@ -121,8 +122,6 @@ footer{
    margin: 15px;
    padding: 15px;
    align-items: center;
-   justify-content: center;
-   text-align: center;
    flex-direction: column;
    border-radius: 15px;
 
@@ -130,11 +129,17 @@ footer{
 }
 .bobbiegoods{
    display: flex;
+   justify-content: center;
    width: 1250px;
-   
-   
-   
 }
 .gameimg{
+   border: white solid 3px;
+   display: flex;
+   margin: 15px;
    width: 400px;
+   
+}
+.gameposi{
+   display: flex;
+   justify-content: center;
 }

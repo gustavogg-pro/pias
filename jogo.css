@@ -39,7 +39,7 @@ footer{
     color: black;
     text-decoration: underline;
     background-color: darkred;
-    border-radius: 3px;
+    border-radius: 10px;
  }
  .card{
     /* border: red solid 2px; */
@@ -85,6 +85,7 @@ footer{
  }
  .logo{
     width: 210px;
+    border-radius: 25%;
  }
  .produtocard{
     width: 310px;

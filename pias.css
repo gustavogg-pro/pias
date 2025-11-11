@@ -5,7 +5,7 @@
 
 header{
     background-color: brown;
-    height: 300px;
+    height: auto;
 }
 body{
    text-align: center;

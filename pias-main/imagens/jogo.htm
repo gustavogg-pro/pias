@@ -1,0 +1,2786 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stray  para PC, Playstation 4 e Playstation 5 (2022)</title>
+
+    <!-- <link rel="canonical" href=""> -->
+
+    <link rel='alternate' hreflang='pt' href='https://bdjogos.com.br/jogo.php?id=15616' /><link rel='alternate' hreflang='en' href='https://en.bdjogos.com.br/game.php?id=15616' />
+    <!-- <link rel="preload" as="image" href="https://bdjogos.com.br/" crossorigin="anonymous" /> -->
+    
+    <meta name="description" content="Stray é um jogo de Aventura / Metroidvania desenvolvido pela BlueTwelve Studio e publicado pela Annapurna Interactive em 19 de julho de 2022  para PC, Playstation 4 e Playstation 5., com direção de Colas Koola e Vivien Mermet-Guyenet, design por Alexandre Brodu e Hugo Dunas-Wald e Mathieu Audrain e músicas compostas por Yann Van der Cruyssen Produzido por Swann Martin-Raget" />
+    <meta name="keywords" content="Stray, , Aventura / Metroidvania, PC, Playstation 4 e Playstation 5,  (2022)">
+    <meta name="yandex-verification" content="b9e31ac9852fac36" />
+
+    <meta property="og:site_name" content="BD Jogos" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://bdjogos.com.br/capas/15616-stray-capa-1.jpg" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="1024" />
+    <meta property="og:image:alt" content="Capa do jogo Stray" />
+    <meta property="og:title" content="Stray  para PC, Playstation 4 e Playstation 5 (2022)" />
+    <meta property="og:description" content="Stray é um jogo de Aventura / Metroidvania desenvolvido pela BlueTwelve Studio e publicado pela Annapurna Interactive em 19 de julho de 2022  para PC, Playstation 4 e Playstation 5., com direção de Colas Koola e Vivien Mermet-Guyenet, design por Alexandre Brodu e Hugo Dunas-Wald e Mathieu Audrain e músicas compostas por Yann Van der Cruyssen Produzido por Swann Martin-Raget" />
+    <meta property="og:url" content="https://bdjogos.com.br/jogo.php?id=15616" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="fb:app_id" content="142697272992756" />
+    <meta name="lomadee-verification" content="22483308" />
+
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:site" content="@bd_jogos" />
+    <meta name="twitter:creator" content="@bd_jogos" />
+    <meta name="twitter:title" content="Stray  para PC, Playstation 4 e Playstation 5 (2022)" />
+    <meta name="twitter:description" content="Stray é um jogo de Aventura / Metroidvania desenvolvido pela BlueTwelve Studio e publicado pela Annapurna Interactive em 19 de julho de 2022  para PC, Playstation 4 e Playstation 5., com direção de Colas Koola e Vivien Mermet-Guyenet, design por Alexandre Brodu e Hugo Dunas-Wald e Mathieu Audrain e músicas compostas por Yann Van der Cruyssen Produzido por Swann Martin-Raget" />
+    <meta name="twitter:image" content="https://bdjogos.com.br/capas/15616-stray-capa-1.jpg" />
+    <meta name="twitter:image:alt" content="Capa do jogo Stray" />
+
+    <!-- MANIFEST --> 
+    <link rel="manifest" href="manifest.json" />
+
+    <!-- Cor de TEMA --> 
+    <meta name="theme-color" content="#ffcc00" />
+
+    <!-- FAVICON -->
+    <link rel="icon" href="https://bdjogos.com.br/icone.png" />
+    <link rel="apple-touch-icon" href="https://bdjogos.com.br/apple-touch-icon.png">
+
+    <style>
+        :root {
+            color-scheme: light dark;
+
+            --amarelo: #ffcc00;
+            --amarelo-escuro: #a18100;
+            --amarelo-claro: #f5d948;
+            --amarelo-accordion: light-dark(#f5d948, #d3a900);
+            --amarelo-dourado: #e7bb07;
+
+            --roxo: #3a005e;
+            --roxo-claro: #6923ae;
+            --roxo-escuro: #210035;
+
+            --cor-fundo-site: light-dark(#d9d9d9, #000);
+            --cor-caixa: light-dark(#f2f2f2, #222);
+            --cor-caixa-clara: light-dark(#ddd, #333);
+            --cor-texto: light-dark(#333, #ccc);
+
+            interpolate-size: allow-keywords;
+        }
+
+        :root {
+            &:has(input[name="color-scheme"][value="light"]:checked) {
+                color-scheme: light;
+            }
+
+            &:has(input[name="color-scheme"][value="dark"]:checked) {
+                color-scheme: dark;
+            }
+        }
+
+        div.light-dark label {
+            cursor: pointer;
+            display: block;
+            height: 20px;
+        }
+
+        input.sel-tema {
+            display: none;
+        }
+
+        label:has(> input.sel-tema:checked) { 
+            background-color: red;
+            display: none;
+        }
+
+        /* RESET BÁSICO */
+        *, *:before, *:after {
+            box-sizing: border-box;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+            height: auto;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            text-wrap: balance;
+            font-weight: bold;
+            line-height: 1.5;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        p {
+            text-wrap: pretty;
+            line-height: 1.4;
+        }
+
+        li, figcaption {
+            text-wrap: pretty;
+            padding: 2px 6px;
+        }
+
+        a {
+            font-family: inherit;
+            color: inherit;
+            text-decoration: none;
+            overflow-wrap: break-word;
+        }
+
+        ul {
+            list-style-position: inside;
+        }
+        /* RESET BÁSICO */
+
+
+        ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #777;
+            opacity: 1; /* Firefox */
+        }
+
+        :-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: #777;
+        }
+
+        ::-ms-input-placeholder { /* Microsoft Edge */
+            color: #777;
+        }
+
+        /* FONTES */
+        h1 {
+            font-size: 34px;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+
+        h3 {
+            font-size: 26px;
+        }
+
+        h4 {
+            font-size: 22px;
+        }
+        /* FIM FONTES */
+
+        div.mobile-menu {
+            display: none;
+        }
+
+        nav.desktop {
+            display: block;
+        }
+
+        dialog {
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            border: 0px solid black;
+
+            margin: 0px auto;
+            max-height: 100%;
+        }
+
+        dialog.dFlex {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            outline: none;
+        }
+
+        dialog::backdrop {
+            background-color: rgb(0,0,0,0.9);
+            -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(12px);
+        }
+
+        div.curiosidade {
+            background-color: var(--cor-caixa-clara);
+            color: var(--cor-texto);
+            padding: 8px 20px;
+            text-wrap: balance;
+            margin-bottom: 10px;
+        }
+
+        div.curiosidade:last-child {
+            margin-bottom: 0px;
+        }
+
+        div.curiosidade a {
+            word-wrap: break-word;
+        }
+
+        /* GRID CONSOLES */
+        div.jogo-divisao-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 25px 20px;
+            margin-top: 20px;
+        }
+
+        div.jogo-divisao-grid div.dados-jogo-flex-column {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+            padding: 0;
+            max-width: 210px;
+        }
+
+        div.jogo-divisao-grid div.dados-jogo-flex-column a.capa-jogo {
+            width: 100%;
+            max-width: none;
+            margin: 0px;
+        }
+
+        div.jogo-divisao-grid div.dados-jogo-flex-column img {
+            width: 100%;
+            max-width: none;
+        }
+
+        /* MASTER SYSTEM, MEGA DRIVE, XBOX 360, ZEEBO */
+        div.jogo-divisao-grid div.dados-jogo-flex-column img.capa-console-1,
+        div.jogo-divisao-grid div.dados-jogo-flex-column img.capa-console-2,
+        div.jogo-divisao-grid div.dados-jogo-flex-column img.capa-console-17,
+        div.jogo-divisao-grid div.dados-jogo-flex-column img.capa-console-44 {
+            aspect-ratio: 5 / 7;
+            object-fit: cover;
+        }
+
+        /* XBOX, WII, PS2 (DVD) */
+        div.jogo-divisao-grid div.dados-jogo-flex-column img.capa-console-12,
+        div.jogo-divisao-grid div.dados-jogo-flex-column img.capa-console-28, 
+        div.jogo-divisao-grid div.dados-jogo-flex-column img.capa-console-15 {
+            aspect-ratio: 130 / 184;
+            object-fit: cover;
+        }
+
+        /* PS3 (BLU-RAY) */
+        div.jogo-divisao-grid div.dados-jogo-flex-column img.capa-console-18 {
+            aspect-ratio: 372 / 437;
+            object-fit: cover;
+            object-position: top center;
+        }
+
+        /* NINTENDO DS */
+        div.jogo-divisao-grid div.dados-jogo-flex-column img.capa-console-40 {
+            aspect-ratio: 210/ 188;
+            object-fit: cover;
+            object-position: top center;
+        }
+
+        /* NINTENDO SWITCH 2 */
+
+        div.jogo-divisao-grid div.dados-jogo-flex-column img.capa-console-67 {
+            /*
+            aspect-ratio: 249 / 405;
+            object-fit: cover;
+            */
+        }
+
+        /* GRID CONSOLES */
+
+
+        .imagem_sidebar_console {
+            text-align: center;
+        }
+
+        .container-promo {
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .container-promo img {
+            max-width: 100%;
+            width: 100%;
+        }
+
+        .container-promo a {
+            width: 32%;
+        }
+
+        .container-promo-console {
+            display: flex;
+            flex-direction: row;
+            gap: 4px;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .container-promo-console img {
+            max-width: 100%;
+            width: 100%;
+        }
+
+        .container-promo-console a {
+            width: 183px;
+        }
+
+        #containerImageDialog {
+            width: 98%;
+            height: 94%;
+            margin: 0px auto;
+            text-align: right;
+
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+
+        .img-pixelated {
+            image-rendering: pixelated;
+        }
+
+        ul, ol {
+            margin: 0px;
+            padding: 0px 0px 0px 0px;
+            list-style-position: inside;
+        }
+        
+        body {
+            font-family: system-ui, sans-serif;
+            font-weight: 400;
+            line-height: 1.5;
+
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: var(--cor-fundo-site);
+            color: var(--cor-texto);
+        }
+
+        button {
+            font-family: system-ui, sans-serif;
+        }
+
+        body.travado {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        img.bandeira {
+            width: 160px;
+        }
+
+        img.bandeiraPais {
+            width: 250px;
+            margin: 0 auto;
+        }
+
+        img.img_console_niver {
+            width: 100%;
+            max-width: 350px;
+            margin: 0 auto;
+        }
+
+        a {
+            color: light-dark(var(--roxo),var(--amarelo));
+            text-decoration: none;
+        }
+
+        a:focus, a:hover {
+            color: light-dark(var(--roxo-claro), var(--amarelo-claro));
+            text-decoration: underline;
+        }
+
+        a.skip-nav-link {
+            position: absolute;
+            background: var(--amarelo);
+            inset: 10px auto auto 10px;
+            transform: translateY(-200%);
+            transition: transform 400ms ease-in;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid var(--roxo);
+            color: var(--roxo-escuro);
+        }
+
+        a.skip-nav-link:focus {
+            transform: translateY(0);
+        }
+
+        search {
+            width: 100%;
+        }
+
+        div.logo-header-small {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        div.logo-header-small img.logo-site {
+            min-width: 164px;
+        }
+
+        div.container-header {
+            background-color: var(--amarelo);
+            background: linear-gradient(var(--amarelo), var(--amarelo-escuro));
+            color: var(--roxo);
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            padding: 20px;
+            gap: 25px;
+        }
+
+        .busca-menu {
+            width: 100%;
+            padding: 7px 14px;
+            border-radius: 6px;
+            border: 1px var(--roxo) solid;
+            background-color: #fff;
+            color: #000;
+        }
+
+        div.idioma-header {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            min-width: 78px;
+        }
+
+        #divCapaJogo img {
+            margin: 0 auto;
+        }
+
+        .noticiaCorpo ol, .noticiaCorpo ul {
+            padding: 0px 0px 0px 50px;
+        }
+
+        #bio_pessoa ol, #bio_pessoa ul {
+            padding: 0px 0px 0px 50px;
+        }
+
+        #bio_pessoa h3 {
+            margin: 20px 0px;
+        }
+
+        .pub {
+            font-size: 10px;
+            margin: 10px 0px;
+        }
+
+        button#btnBusca{
+            padding: 0px 8px;
+            height: 31px;
+            background: linear-gradient(var(--roxo-claro), var(--roxo));
+            border: 0px;
+            border-radius: 5px;
+            color: #ff0;
+            font-size: 5px;
+            opacity: 1;
+            cursor: pointer;
+            vertical-align: bottom;
+        }
+
+        button#btnAleatorio {
+            font-size: 16px;
+            font-weight: 700;
+            white-space: nowrap;
+            color: var(--amarelo);
+
+            padding: 10px 14px;
+            height: 42px;
+            background: linear-gradient(var(--roxo-claro), var(--roxo));
+            border: 0px;
+            border-radius: 5px;
+            opacity: 1;
+            cursor: pointer;
+            display: block;
+            align-content: center;
+        }
+
+        button#btnBusca:disabled {
+            opacity: 0.8;
+            cursor: wait;
+        }
+
+        input#busca:read-only {
+            opacity: 0.8;
+            cursor: wait;
+        }
+
+        search form {
+            width: 100%;
+            text-align: center;
+            display: flex;
+            gap: 10px;
+            padding-inline: 0px;
+        }
+
+        nav {
+            padding: 20px 20px 0px;
+            width: 100%;
+        }
+
+        nav ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 0;
+            gap: 10px;
+        }
+
+        nav ul li {
+            padding: 5px 10px;
+        }
+
+        nav ul li a {
+            font-size: 16px;
+            font-weight: 700;
+            white-space: nowrap;
+
+            color: light-dark(var(--roxo), var(--amarelo));
+            text-decoration: none;
+        }
+
+        nav ul li a:focus, header a:hover {
+            color: light-dark(var(--roxo-claro), var(--amarelo-claro));
+            text-decoration: underline;
+        }
+
+        nav ul li sup {
+            font-size: 11px;
+            color: orangered;
+            margin-left: 3px;
+            font-weight: bold;
+        }
+
+        section, div.container-site {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 20px;
+            position: relative;
+            z-index: 99;
+        }
+
+        main {
+            width: 60%;
+        }
+
+        main.full {
+            width: 100%;
+        }
+
+        aside {
+            width: 40%;
+        }
+
+        div.cookie {
+            position: fixed;
+            background-color: #000;
+            color: var(--amarelo);
+            font-size: 10px;
+            width: 100%;
+            z-index: 999;
+            bottom: 0px;
+            box-sizing: border-box;
+            padding: 6px;
+            display: none;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-top: 1px solid yellow;
+            gap: 10px;
+            transition: all 0.5s;
+        }
+
+        div.cookie.ativo {
+            display: flex;
+        }
+
+        div.cookie button#CookieAceite {
+            padding: 2px 10px;
+            background: linear-gradient(var(--roxo-claro), var(--roxo));
+            border: 0px;
+            border-radius: 5px;
+            color: #ff0;
+            font-size: 13px;
+            cursor: pointer;
+            display: block;
+        }
+
+        .caixa-flex-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .caixa-ad {
+            margin: 30px auto 30px;
+            text-align: center;
+            content-visibility: auto;
+        }
+
+        .caixa-cinza {
+            padding: 15px;
+            background-color: var(--cor-caixa);
+            border-radius: 15px;
+            margin: 0px 0px 20px;
+        }
+
+        .caixa-cinza.bg-clara {
+            background-color: var(--cor-caixa-clara);
+        }
+
+        .caixa-cinza p {
+            font-size: 18px;
+            margin: 0px 0px 18px;
+            padding: 0;
+        }
+
+        .caixa-cinza p:last-child {
+            margin: 0px 0px 0px;
+        }
+
+        .caixa-cinza p.tipo-artigo,
+        .caixa-cinza h2.tipo-artigo {
+            padding: 4px 10px;
+            background-color: light-dark(var(--roxo), var(--roxo-escuro));
+            margin: 0px 0px 12px;
+            color: light-dark(#fff, #ccc);
+            font-size: 20px;
+        }
+
+        div#bio_pessoa {
+            font-size: 18px;
+        }
+
+        div.box_data {
+            font-size: 18px;
+            padding-top: 20px;
+        }
+
+        div.descricao_jogo {
+            font-size: 18px;
+            margin-block: 20px 18px;
+        }
+
+        div#divCapaJogo {
+            margin-bottom: 20px;
+        }
+
+        h2.filtro {
+            color: #ddd;
+            background-color: var(--roxo-escuro);
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: 400;
+            margin: 0px 0px 10px;
+        }
+
+        h2.resumo-artigo {
+            padding: 10px 0px;
+            font-size: 18px;
+            margin: 0px;
+        }
+
+        .container_rss {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+
+        .container-box-index {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .container-box-index img.img-materia-revista {
+            max-width: 140px;
+        }
+
+        .container-box-index img.imagem-index-artigo {
+            max-width: 220px;
+        }
+
+        .img-box-index {
+            width: max-content;
+        }
+
+        .img-box-index img {
+            max-width: 100%;
+            width: 160px;
+            min-width: 160px;
+            margin: 0px;
+        }
+
+        .detalhes-conteudo-index {
+            margin: 0px;
+        }
+
+        .detalhes-conteudo-index h2 {
+            font-size: 25px;
+            margin: 0px 0px 10px;
+        }
+
+        .detalhes-conteudo-index h3 {
+            line-height: 1.2;
+            margin-bottom: 10px;
+        }
+
+        .detalhes-conteudo-index p.span-add {
+            font-size: 12px;
+            margin: 14px 0px 0px;
+        }
+
+        .paginacao {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 18px;
+            margin: 0px;
+            gap: 50px;
+        }
+
+        .paginacao a {
+            font-size: clamp(14px, 0.95vw, 18px);
+            background: linear-gradient(var(--roxo-claro), var(--roxo));
+            color: var(--amarelo);
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .paginacaoNum {
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            font-size: 20px;
+        }
+
+        .paginacaoNum a.ativo{
+            background-color: var(--roxo-escuro);
+            padding: 8px 16px;
+            border-radius: 10px;
+        }
+
+        .container-parceiros-site{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 2px 10px;
+            gap: 15px;
+        }
+
+        .container-redes {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #subtitulo, .subtitulo {
+            color: light-dark(#fff, #ccc);
+            background-color: light-dark(var(--roxo), var(--roxo-escuro));
+            padding: 10px 20px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .subtitulo.mt-4 {
+            margin-top: 16px;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+        }
+
+        p.steam{
+            background-image: linear-gradient( 60deg, rgba(117, 176, 34, 1) 5%,rgba(88, 138, 27, 1) 95%);
+            text-align: center;
+            color: #fff;
+            padding: 15px;
+            font-size: 16px;
+            margin: -4px 0px 0px 0px;
+        }
+
+        p.steam a{
+            color: #fff;
+        }
+
+        .txt-center {
+            text-align: center;
+        }
+
+        .container-sidebar-index-niver {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 10px 0px;
+            gap: 15px;
+        }
+
+        .container-sidebar-index-niver img {
+            width: 80px;
+            min-width: 80px;
+        }
+
+        #lnkTodasMateriasSidebar, #lnkTodosJogosConsole, #lnkTodosManuais {
+            font-size: 18px;
+            background: linear-gradient(var(--roxo-claro), var(--roxo));
+            color: var(--amarelo);
+            padding: 10px 25px;
+            border-radius: 100px;
+            display: block;
+            width: -moz-fit-content;
+            width: fit-content;
+            margin: 0 auto;
+        }
+
+        ol.lista-numerada li{
+            margin-bottom: 12px;
+        }
+
+        .lista_controle{
+            display:table;
+        }
+
+        span.destaque {
+            color: #ff5200;
+        }
+
+        ul.materia_revista_h2{
+            list-style: none;
+            padding-left: 0px;
+        }
+
+        .container-flex-perfil-console {
+            display: flex;
+            flex-direction: row;
+            gap: 80px;
+            padding-inline: 20px;
+        }
+
+        #perfil_console {
+            margin: 0px;
+        }
+
+        #perfil_console img {
+            min-width: 300px;
+            max-width: 300px;
+        }
+
+        img.brilho-foto-console {
+            filter: brightness(0.67);
+        }
+
+        #perfil_pessoa {
+            padding: 0px;
+            text-align: center;
+            margin: 0 auto 20px;
+        }
+
+        #perfil_pessoa img {
+            width: 250px;
+            height: 250px;
+            margin: 0 auto;
+        }
+
+        .titulo_desenvolvedoras {
+            color: light-dark(#fff, #ccc);
+            background-color: light-dark(var(--roxo), var(--roxo-escuro));
+            padding: 10px 20px;
+            font-size: clamp(18px, 1.26vw, 24px);
+            margin-bottom: 12px;
+        }
+
+        .divLogoDevLista {
+            max-width:100%;
+        }
+
+        .container-videos {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .video-div-console {
+            background-color: var(--cor-caixa);
+            position: relative;
+            width:30%;
+
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .video-div-console iframe {
+            width:100%;
+            height: auto;
+            border: 0px solid #000;
+            aspect-ratio: 16 / 9;
+        }
+
+        .video-div-console img.thumb {
+            position: relative;
+            top: 0;
+            z-index: 1;
+
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .video-div-console img.icon-youtube {
+            position: absolute;
+            z-index: 2;
+            width: 80px;
+        }
+
+        .container-filtro-genero {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        h4 {
+            color: light-dark(#fff, #ccc);;
+            background-color: light-dark(var(--roxo), var(--roxo-escuro));
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: 400;
+            margin: 0px 0px 10px;
+        }
+
+        div.linhaNotaRevista {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .notaMediaRevista {
+            background-color: var(--amarelo-dourado);
+            color: var(--roxo-escuro);
+            width: 115px;
+            height: 115px;
+            border-radius: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0px 20px;
+        }
+
+        .notaMediaRevista p {
+            margin:0px;
+            padding: 0px;
+        }
+
+        .notaMediaRevista p:nth-child(2) {
+            font-size: 40px;
+            line-height: 1;
+        }
+
+        .notaMediaRevista p:nth-child(1) {
+            font-size: 13px;
+            line-height: 1.1;
+        }
+
+        .flexCenter{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        a.btn-filtro-genero{
+            background-color: light-dark(#ddd, #111);
+            color: light-dark(var(--roxo), var(--amarelo));
+            padding: 6px 10px;
+            margin: 5px;
+            font-size: 14px;
+            border-radius: 5px;
+            display:block;
+            white-space: nowrap;
+        }
+
+        a.btn-filtro-genero-selecionado{
+            background-color: var(--amarelo-dourado);
+            pointer-events: none;
+            color: #000;
+            font-size: 15px;
+        }
+
+        div.texto-niver-console {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        div.texto-niver-console p {
+            text-align: center;
+            margin: 0;
+        }
+
+        /* CSS Container Flex */
+
+        .container-jogos-flex, .container-pessoas-flex {
+            box-sizing: border-box;
+        }
+
+        .ano-divisao-flex, .cargo-divisao-flex {
+            background-color: var(--amarelo-claro);
+            color: #000;
+            padding: 10px;
+            margin: 10px 0px 0px;
+            font-size:20px;
+        }
+
+        .dados-flex-inteiro{
+            width:100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            padding:10px 0px;
+            gap: 20px;
+        }
+
+        .dados-jogo-flex {
+            width:30%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            padding:10px 0px;
+        }
+
+        .dados-jogo-flex-column {
+            width: 100%;
+            max-width: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 0;
+        }
+
+        .dados-jogo-flex-column a {
+            text-align: center;
+            font-size: clamp(13px, 0.833vw, 17px);
+            line-height: 1.6;
+        }
+
+        .dados-jogo-flex-metade, .dados-pessoa-flex-metade {
+            width: 46%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 10px 0px;
+            gap: 10px;
+        }
+
+        .dados-pessoa-flex-min {
+            width:100%;
+            max-width: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 0px;
+            text-align: center;
+        }
+
+        .imagem-jogo-flex {
+            width: 110px;
+            margin: 0px 10px 0px 0px;
+            min-width: 110px;
+        }
+
+        .imagem-jogo-flex img.bgLogoWhite {
+            background-color: #f2f2f2;
+            padding: 6px;
+        }
+
+        .imagem-jogo-flex img.bgLogoBlack {
+            background-color: #000;
+            padding: 6px;
+        }
+
+        .imagem-jogo-flex-oitenta, .imagem-pessoa-flex-oitenta {
+            width: 100%;
+            max-width: 80px;
+            margin: 0px;
+        }
+
+        .imagem-jogo-flex-oitenta img, .imagem-pessoa-flex-oitenta img {
+            width: 80px;
+            min-width: 80px;
+            height: 80px;
+        }
+
+        #detalhes_jogo {
+            float: none;
+            margin-top: 10px;
+            width: 100%; 
+            text-align: left;
+        }
+
+        #detalhes_jogo ul li, #detalhes_pessoa li {
+            list-style: none;
+        }
+
+        .aita{
+            font-style: italic;
+            font-size: 13px;
+            word-break: break-all;
+        }
+
+        .tam_capa{
+            width: 130px;
+        }
+
+        .mesma_linha{
+        display: inline;
+        }
+
+        #lista_curiosidades li{
+            margin-bottom:12px;
+        }
+
+        .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+            border: 1px solid #ccc;
+            padding: 3px 5px;
+        }
+
+        .table {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .destaque_vermelho {
+            color:#f00;
+        }
+
+        #lista_videos{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        ul#lista_videos li{
+            list-style: none;
+        }
+
+        .nickText{
+            margin: 0px;
+            font-style: italic;
+            padding:0px 0px;
+            font-size: 13px;
+        }
+
+        #perfil_desenvolvedora {
+            float: none;
+            padding: 5px;
+            text-align: center;
+            max-width:400px;
+            width: 100%;
+            margin: 0 auto 20px;
+        }
+
+        #perfil_desenvolvedora img {
+            margin: 0 auto;
+        }
+
+        #perfil_desenvolvedora.bgLogoWhite {
+            background-color: #f2f2f2;
+            padding: 12px;
+            margin-bottom: 20px;
+        }
+
+        #perfil_desenvolvedora.bgLogoBlack {
+            background-color: #000;
+            padding: 12px;
+            margin-bottom: 20px;
+        }
+
+        ul.listaBusca{
+            padding:0px;
+            list-style:none;
+        }
+
+        div.buttons-consent-container {
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row;
+            padding-bottom: 0px;
+        }
+
+        div.text-center, p.text-center{
+            text-align:center;
+        }
+
+        .video_li {
+            margin-bottom:10px;
+        }
+
+        .video_li .video-div-console {
+            width: 100%;
+        }
+
+        .video_li iframe {
+            width: 100%;
+            height: auto;
+            border: 0px solid #000;
+        }
+
+        .breadcrumb {
+            padding: 8px 15px;
+            margin-bottom: 20px;
+            list-style: none;
+            border-radius: 4px;
+        }
+
+        .breadcrumb>li {
+            display: inline-block;
+        }
+
+        .breadcrumb>.active {
+            color: light-dark(#333, #ccc);
+        }
+
+        .breadcrumb li+li:before {
+            padding: 6px;
+            color: #ccc;
+            content: "/\00a0";
+        }
+
+        .image-left-busca {
+            margin-right:10px;
+            width: 80px;
+            min-width: 80px;
+        }
+
+        .image-left-busca img {
+            width: 100%;
+        }
+
+        .image-left-busca-console{
+            margin-right:10px;
+            width:110px;
+            min-width:110px;
+        }
+
+        .container-resultado{
+            display: flex;
+            justify-content: flex-start;
+            justify-items: center;
+            align-items: center;
+            margin: 10px 0px;
+            gap: 8px;
+        }
+
+        div.imagem-materia-revista{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .grid-container-80 {
+            display: grid;
+            gap: 12px;
+            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+            align-items: end;
+        }
+
+        .grid-container-80 img {
+            width: 80px;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: baseline;
+            align-content: space-between;
+            gap: 10px;
+        }
+
+        .flex-container-w80 img {
+            width: 80px;
+        }
+
+        .flex-container-w100p img {
+            width: 100%;
+        }
+
+        .jogo-serie-ativo {
+            border: 2px solid transparent;
+            border-image: url(https://bdjogos.com.br/img/series-border.gif) 20;
+            margin: 0px;
+        }
+
+        .div-img-comercial-revista{
+            width: 100%;
+            max-width:300px;
+            margin: 0 auto 0px;
+            cursor:pointer;
+        }
+
+        .flex-container-generos {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: space-between;
+        }
+
+        .flex-container-expand {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-content: flex-start;
+            gap: 10px;
+        }
+
+        .flex-container-expand > div,
+        .flex-container-expand > a {
+            flex: 1;
+        }
+
+        .flex-container-desenvolvedoras {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: center;
+            gap: 8px;
+        }
+
+        .flex-container-desenvolvedoras > * {
+            flex: 1;
+
+        }
+
+        .flex-container-revistas {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: space-between;
+            padding: 15px 0px;
+        }
+
+        .lnk-img-serie{
+            margin: 0px;
+        }
+
+        .lista_botao{
+            padding: 8px 16px;
+            background: linear-gradient(#fac800, #ae8b00);
+            border-radius: 10px;
+            margin: 0px;
+            display: block;
+            color: #3a005e;
+            transition: all 0.3s ease;
+            text-wrap: nowrap;
+            text-align: center;
+        }
+
+        .lista_botao.selected,
+        .lista_botao:hover,
+        .lista_botao:focus {
+            text-decoration: none;
+            background: linear-gradient(#750c76, #3a005e);
+            color: #fac800;
+        }
+
+        .lista_botao_pais{
+            padding: 5px;
+            background: linear-gradient(#fac800, #ae8b00);
+            border-radius: 0px;
+            margin: 5px;
+            display: block;
+            color: #3a005e;
+        }
+
+        .lista_botao_pais:hover {
+            text-decoration: none;
+            background: #3a005e;
+            color: #fac800;
+        }
+
+        .lista_botao_desenvolvedora{
+            padding: 12px 22px;
+            background-color: light-dark(#ddd, #111);
+            border-radius: 10px;
+            margin: 0px;
+            color: light-dark(var(--roxo),var(--amarelo-dourado));
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+            border: 0px solid var(--amarelo-dourado);
+            text-align: center;
+        }
+
+        .lista_botao_desenvolvedora:hover {
+            text-decoration: none;
+            background: #3a005e;
+            color: #fac800;
+        }
+
+        img.imgLogoDevs {
+            width: auto;
+            max-height: 50px;
+        }
+
+        /* ------------------------ CSS LISTA SÉRIES -------------------------------- */
+
+        ul.lista_series
+        {
+            padding:0px 0px 0px 20px;
+            display:table;
+        }
+
+        li.capa_jogo_series {
+            list-style: none;
+            float: left;
+            margin-right: 5px;
+            height: 80px;
+            margin-bottom: 5px;
+            overflow: hidden;
+            width: 80px;
+        }
+
+        li.li-pad, ul#lista_materias li, ul#lista_manuais li{
+            list-style: none;
+        }
+
+        /* FIM CSS Container Flex */
+
+        /* ACCORDION */
+
+        .accordion{
+            padding: 0;
+        }
+
+        .accordion .parent-tab,
+        .accordion .child-tab{
+            margin-bottom: 12px;
+            border-radius: 0px;
+        }
+
+        .accordion .parent-tab label,
+        .accordion .child-tab label{
+            background: var(--amarelo-accordion);
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            border-radius: 0px;
+            position: relative;
+            z-index: 99;
+            transition: all 0.5s ease;
+        }
+
+        .accordion .parent-tab label:hover{
+            background: var(--amarelo-accordion);
+        }
+
+        .parent-tab input:checked ~ label,
+        .child-tab input:checked ~ label{
+            border-radius: 3px 3px 0 0;
+            background: var(--amarelo-accordion);
+        }
+
+        .accordion label span{
+            color: var(--roxo);
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .accordion .child-tab label span{
+            font-size: 17px;
+        }
+
+        .parent-tab label .icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            height: 20px;
+            width: 20px;
+            font-size: 15px;
+            color: var(--roxo);
+            background: var(--amarelo-accordion);
+            border-radius: 50%;
+            transform: rotate(90deg);
+            transition: all 0.4s ease;
+        }
+
+        .parent-tab input:checked ~ label .icon,
+        .child-tab input:checked ~ label .icon {
+            transform: rotate(270deg);
+        }
+
+        .accordion .parent-tab .content {
+            overflow: hidden;
+            border-radius: 0 0 3px 3px;
+            padding: 0px 20px;
+            transition: all 1.2s ease;
+            display: grid;
+            grid-template-rows: 0fr;
+        }
+
+        .accordion .parent-tab .content > div {
+            overflow: hidden;
+        }
+
+        .parent-tab input:checked ~ .content {
+            grid-template-rows: 1fr;
+        }
+
+        .tab-3 input:checked ~ .content{
+            padding: 15px 20px;
+        }
+
+        .accordion input[type="radio"],
+        .accordion input[type="checkbox"]{
+            display: none;
+        }
+
+        .h3_materias {
+            font-size: 18px;
+            margin: 20px 0px 0px 0px;
+        }
+
+        .caixa-cinza p.paragrafo_revista {
+            padding: 3px 0px 3px 40px;
+        }
+
+        /* ACCORDION MENU */
+        div.accordion.mobile-menu {
+            padding: 12px 12px 0px 12px;
+        }
+
+        div.accordion div.parent-tab-menu {
+            margin-bottom: 0;
+        }
+
+        div.accordion.mobile-menu label span {
+            color: light-dark(var(--roxo), var(--amarelo));
+        }
+
+        div.accordion div.parent-tab-menu label,
+        div.accordion div.parent-tab-menu label:hover {
+            background-color: light-dark(#fff, #000);
+            border: 1px solid light-dark(var(--roxo), var(--amarelo));
+            border-radius: 15px;
+        }
+
+        nav.mobile {
+            padding: 12px 12px 0px;
+        }
+
+        /* FIM ACCORDION */
+
+        .container-new{
+            display: flex;
+            flex-direction: row;
+            padding: 0px;
+            gap: 20px;
+        }
+
+        .news_foto {
+            min-width:220px;
+            width:220px;
+            position:relative;
+        }
+
+        .destaque_artigo {
+            text-transform: uppercase;
+            margin: 0px 10px 10px 0px;
+            font-size: 17px;
+        }
+
+        ul.listaSobre {
+            padding: 10px 0px 0px 40px;
+        }
+
+        .font11 {
+            font-size: 11px;
+        }
+
+        iframe.iframe-google-docs {
+            width: 100%;
+            height: 60vh;
+            border: 0px solid #000;
+        }
+
+        div.pessoa-divisao-flex {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: baseline;
+            flex-wrap: wrap;            
+            box-sizing: border-box;
+            gap: 16px;
+            padding-top: 16px;
+        }
+
+        img.ninshi-masuta-img {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        /** LIGHTBOX MARKUP **/
+
+        .lightCapa, .lightMaterial {
+            cursor: pointer;
+        }
+
+        .lightbox {
+            transform: scale(0,0);
+            position: fixed;
+            z-index: 999;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 1em;
+            background: rgba(0, 0, 0, 0.9);
+            transition: all 400ms ease-in-out;
+            -webkit-backdrop-filter: blur(12px);
+            backdrop-filter: blur(12px);
+        }
+
+        /* Unhide the lightbox when it's the target */
+        .lightbox:target {
+            display: block;
+            transform: scale(1,1);
+        }
+
+        .lightbox.ativo {
+            display: block;
+            transform: scale(1,1);
+        }
+
+        .lightbox span {
+            /* Full width and height */
+            display: block;
+            width: 100%;
+            height: 100%;
+
+            /* Size and position background image */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            cursor: pointer;
+        }
+
+        .dinline{
+            display: inline;
+        }
+
+        .capa_jogo_tam {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            max-width: 780px;
+            margin: 0 auto;
+            align-items: end;
+        }
+
+        .capa_jogo_tam.clsNumCapas1 {
+            grid-template-columns: 1fr;
+            max-width: 390px;
+            text-align: center;
+        }
+
+        .foto_jogo_tam {
+            width:100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 18px;
+        }
+
+        .foto_jogo_tam img {
+            width: 100%;
+            max-width: 300px;
+            cursor: pointer;
+        }
+
+        .equipe_jogo_tam {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: baseline;
+            gap: 12px;
+        }
+
+        .equipe_jogo_tam figure {
+            text-align: center;
+        }
+
+        .container-steam iframe {
+            width: 100%;
+            border: 0px solid #000;
+        }
+
+        .img_destaque{
+            width: 100%;
+        }
+
+        .scrolltop {
+            position: fixed;
+            right: 15px;
+            bottom: 15px;
+            z-index: 999;
+            cursor: pointer;
+
+            width: 40px;
+            height: 40px;
+            border-radius: 30px;
+            background-color: var(--roxo);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div.box-memoria-pessoa {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        div.box-memoria-pessoa div.box-pessoa {
+            width: 100%;
+            background-color: light-dark(#fff, #000);
+            border-radius: 15px;
+            padding-block: 25px;
+            padding-inline: 25px;
+            border: 2px solid #444;
+        }
+
+        div.box-memoria-pessoa div.box-pessoa div.dados-pessoa {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        div.box-memoria-pessoa div.box-pessoa:nth-child(even){
+            background-color: light-dark(#ddd, #111);
+            border: 2px solid #777;
+        }
+
+        div.box-memoria-pessoa div.box-pessoa img,
+        div.box-memoria-pessoa div.box-pessoa a.link-pessoa-img {
+            min-width: 160px;
+        }
+
+        div.box-memoria-pessoa div.texto-pessoa p:last-child {
+            margin-bottom: 0;
+        }
+
+        div.cargo-pessoa {
+            font-size: 15px;
+
+            background-color: var(--roxo);
+            color: var(--amarelo);
+            font-weight: 600;
+
+            width: 100%;
+            text-align: center;
+
+            padding-block: 6px;
+        }
+
+        div.aviso-venda {
+            background-color: #f00;
+            color: #fff;
+            padding: 16px;
+            margin-block: 5px 20px;
+        }
+
+        div.aviso-venda h2 {
+            font-size: 34px;
+            margin-bottom: 20px;
+            line-height: 1;
+        }
+
+        @media screen and (max-width: 1023px) {
+
+            section, div.container-site {
+                flex-direction: column;
+                padding: 12px;
+            }
+
+            main {
+                width: 100%;
+            }
+
+            aside {
+                width: 100%;
+            }
+
+            .container-flex-perfil-console {
+                flex-direction: column;
+                gap: 20px;
+                padding-inline: 0px;
+            }
+
+            #perfil_console {
+                margin: 0px auto;
+            }
+
+            /* CONTAINER FLEX */
+            .dados-jogo-flex, .dados-jogo-flex-metade, .dados-pessoa-flex-metade, .dados-pessoa-flex{
+                width: 100%
+            }
+
+            .imagem-jogo-flex, .imagem-jogo-flex-oitenta {
+                margin: 0px 20px 0px 0px;        
+            }
+
+            .imagem-jogo-flex {
+                margin: 0px 20px 0px 0px;        
+            }
+            /* FIM CONTAINER FLEX */
+
+            .video-div-console{
+                width:48%;
+                padding: 0px 0px 10px;
+            }
+
+            #conteudo{
+                flex-direction: column;
+            }
+
+            .coluna_esquerda{
+                width: 100%;
+            }
+
+            .coluna_direita{
+                width: 100%;
+                margin-top:-15px;
+            }
+
+            .texto_titulo_jogo {
+                font-size: 22px;
+            }
+
+            .texto_caixa {
+                font-size: 16px;
+                margin-bottom: 0px;
+            }
+
+            .texto_caixa a{
+                font-size: 20px;
+            }
+
+            .notaMediaRevista {
+                margin: 0px 10px;
+            }
+
+            .notaMediaRevista p {
+                margin:0px;
+                padding: 0px;
+            }
+
+            .notaMediaRevista p:nth-child(2) {
+                font-size: 30px;
+            }
+
+            .notaMediaRevista p:nth-child(1) {
+                font-size: 12px;
+            }
+
+            div.box-memoria-pessoa div.box-pessoa div.dados-pessoa {
+                flex-direction: column;
+                margin-top: 20px;
+                gap: 30px;
+            }
+
+            div.box-memoria-pessoa div.box-pessoa div.dados-pessoa a.link-pessoa-img {
+                margin: 0 auto;
+            }
+        }
+
+        @media screen and (max-width: 560px) {
+
+            div.mobile-menu {
+                display: block;
+            }
+
+            nav.desktop {
+                display: none;
+            }
+            
+            div.container-header {
+                flex-direction: column;
+                padding: 12px;
+                gap: 12px;
+            }
+
+            div.linhaNotaRevista {
+                flex-direction: column-reverse;
+            }
+
+            .container-promo a {
+                width: 48%;
+            }
+
+            .accordion .parent-tab .content {
+                padding: 0px 10px;
+            }
+
+            .caixa-cinza p.paragrafo_revista {
+                padding: 3px 0px 3px 20px;
+            }
+
+            .container-new{
+                display: flex;
+                flex-direction: column;
+                padding: 0px 10px;
+            }
+
+            .news_foto{
+                width:100%;
+                min-width: unset;
+                text-align:center;
+                margin:0 auto;
+            }
+
+            img.bandeira {
+                width: 110px;
+            }
+
+            img.bandeiraPais {
+                width: 160px;
+                margin: 0 auto;
+            }
+
+            div.cookie {
+                text-align: justify;
+                padding: 6px 20px;
+                gap: 20px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+
+            div.jogo-divisao-grid div.dados-jogo-flex-column {
+                max-width: unset;
+            }
+
+            .container-promo-console a {
+                width: 48%;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            .container-box-index {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .img-box-index {
+                width: 100%;
+            }
+
+            .img-box-index img {
+                width: 100%;
+                min-width: 100%;
+                margin: 0;
+            }
+
+            .container-box-index img.img-materia-revista {
+                max-width: 100%;
+            }
+
+            .container-box-index img.imagem-index-artigo {
+                max-width: 100%;
+            }
+
+            #perfil_console {
+                margin: 0px auto;
+                min-width:auto;
+                width:100%;
+            }
+
+            .dados-jogo-flex-metade{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .dados-pessoa-flex-min {
+                padding: 12px 0px 20px;
+            }
+
+            .imagem-jogo-flex {
+                margin: 0px 0px 0px 0px;        
+            }
+
+            #perfil_console {
+                margin: 0px auto;
+                min-width:auto;
+                width:100%;
+            }
+
+            .container-videos{
+                flex-direction: column;
+            }
+
+            .video-div-console{
+                width:100%;
+                padding: 0px 0px 10px;
+            }
+
+            .header_logo{
+                float: none; 
+                width: 100%;
+                text-align: center;
+            }
+
+            .header_busca{
+                float: none; 
+                width: 100%; 
+                margin-top: 8px;
+            }
+
+            #capa_jogo {
+                float: none;
+                width: 100%; 
+                text-align: center;
+            }
+
+            .amp_capa_jogo{
+                width:250px;
+                height:250px;
+                position: relative;
+                float: none;
+                margin:0 auto;
+            }
+
+            #info_jogo {
+                padding: 0px 0px 0px 0px;
+                display: block;
+            }
+
+            #detalhes_jogo {
+                float: none;
+                margin-top: 10px;
+                width: 100%; 
+                text-align: left;
+            }
+
+            .artigo_foto {
+                margin-right: 0px;
+            }
+
+            .artigo_foto img {
+                width:100%;
+                margin-bottom: 10px;
+            }
+
+            .container-box-index {
+                flex-direction: column;
+            }
+
+            .capa_jogo_index {
+                text-align: center;
+                width: 90%;
+                margin: 0px auto 20px auto;
+                padding: 0px;
+            }
+
+            .pcaixa {
+                margin: 0px auto;
+                padding: 0px;
+            }
+
+            article div p img{
+                width:100%;
+            }
+
+            .tam_capa{
+                width: 50px;
+            }
+
+            #perfil_console, #perfil_desenvolvedora {
+                float: none;
+                padding: 0px;
+                text-align: center;
+                width: 100%;
+                margin: 0 auto 20px;
+            }
+
+            #perfil_console img {
+                min-width: auto;
+                max-width: none;
+                width: 85%;
+                margin: 10px auto 0px;
+            }
+
+            #capa_jogo img, #perfil_desenvolvedora img {
+                width: 100%;
+            }
+
+            #bio_pessoa{
+                text-align: left;
+            }
+
+            nav ul li {
+                padding: 4px 8px;
+            }
+        }
+
+        @media screen and (max-width: 300px) {
+            .lista_botao{
+                text-wrap: wrap;
+            }
+
+            .rssh1 {
+                font-size: 19px;
+            }
+
+            .rssimg {
+                margin: 5px -10px;
+            }
+        }
+
+        @media screen and (max-width: 250px) {
+            .rssh1 {
+                font-size: 16px;
+            }
+
+            .rssimg {
+                margin: 5px -10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="container-header">
+        <a accesskey="1" class="skip-nav-link" href="#main-content">Pular navegação[1]</a>
+
+        <div class="logo-header-small">
+            <a id="logoCabecalho" data-rel="prefetch" title="Acessar BD Jogos" href="index.php">
+                <img class="logo-site" src="img/bdjogos.svg" alt='Logo BD Jogos' width="164" height="20">
+            </a>
+            <div class="light-dark">
+                <label><input class="sel-tema" name="color-scheme" type="radio" value="light" ><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#3a005e" class="bi bi-lightbulb" viewBox="0 0 16 16">
+  <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1"/>
+</svg></label>
+                <label><input class="sel-tema" name="color-scheme" type="radio" value="dark" checked><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#3a005e" class="bi bi-lightbulb-fill" viewBox="0 0 16 16">
+  <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5"/>
+</svg></label>
+            </div>
+        </div>
+        <search>
+            <form target="_top" class="navbar-form" method="get" action="busca.php" id="formBusca">
+                <input aria-label="Busca" placeholder="Buscar jogos, pessoas e desenvolvedoras" autocomplete="off" value="" required type="text" class="busca-menu form-control" name="busca" id="busca" aria-describedby="busca">
+                <button id="btnBusca" class="btn btn-default btn-bdjogos" type="button" onclick="buscajs();">
+                    <img src="img/busca.svg" width="18" height="18" alt="Busca">
+                </button>
+            </form>
+        </search>
+                    <div class="idioma-header">
+                <a hreflang="pt" title="Acessar BD Jogos em português" href="https://bdjogos.com.br/jogo.php?id=15616"><img alt="Acessar BD Jogos em português" width="33" height="25" src="img/brasil.svg" /></a>
+                <a hreflang="en" title="Access BD Jogos in english" href="https://en.bdjogos.com.br/game.php?id=15616"><img alt="Access BD Jogos in english" width="33" height="25" src="img/estados-unidos.svg" /></a>
+            </div>
+            </div>
+
+    <div class="accordion mobile-menu">
+        <div class="parent-tab parent-tab-menu">
+            <input type="checkbox" name="tab" id="tab-menu">
+            <label for="tab-menu">
+                <span>Menu</span>
+                <span class="icon"><img alt="descer accordion menu" src="img/caret-right.svg" /></span>
+            </label>
+            <div class="content">
+                <div>
+                    <nav class="mobile">
+                        <ul class="sidebar">
+                            <li><a data-rel="prefetch" title="Lista de Jogos por Console" id="menuJogosConsole" href="consoles.php">Jogos por Console</a></li>
+                            <li><a data-rel="prefetch" title="Lista de Jogos por Gênero" id="menuGenero" href="generos.php">Jogos por Gênero</a></li>
+                            <li><a data-rel="prefetch" title="Lista de Jogos por Ano" id="menuAno" href="anos.php">Jogos por Ano</a><!--sup>novo</sup--></li>
+                            <li><a data-rel="prefetch" title="Lista de Jogos por País" id="menuPais" href="paises.php">Jogos por País</a></li>
+                            <li><a data-rel="prefetch" title="Lista de Desenvolvedoras" id="menuListaDesenvolvedoras" href="desenvolvedoras.php">Lista de Desenvolvedoras</a></li>
+                            <li><a data-rel="prefetch" title="In Memoriam" id="memoriam" href="memoriam.php">In Memoriam</a></li>
+                            <li><a data-rel="prefetch" title="Artigos e Notícias" id="menuArtigos" href="news.php">Artigos e Notícias</a></li>
+                            <li><a data-rel="prefetch" title="Manuais" id="menuManuais" href="manuais.php">Manuais</a></li>
+                            <li><a data-rel="prefetch" title="Matérias de Revistas" id="menuRevistas" href="materias-revistas.php">Matérias de Revistas</a></li>
+                            <li><a data-rel="prefetch" title="Sobre Nós" id="menuSobre" href="sobre.php">Sobre Nós</a></li>
+                            <li><button id="btnAleatorio" type="button" onclick="randomGame(29600);">Jogo Aleatório</button></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="desktop">
+        <ul class="sidebar">
+            <li><a data-rel="prefetch" title="Lista de Jogos por Console" id="menuJogosConsole" href="consoles.php">Jogos por Console</a></li>
+            <li><a data-rel="prefetch" title="Lista de Jogos por Gênero" id="menuGenero" href="generos.php">Jogos por Gênero</a></li>
+            <li><a data-rel="prefetch" title="Lista de Jogos por Ano" id="menuAno" href="anos.php">Jogos por Ano</a><!--sup>novo</sup--></li>
+            <li><a data-rel="prefetch" title="Lista de Jogos por País" id="menuPais" href="paises.php">Jogos por País</a></li>
+            <li><a data-rel="prefetch" title="Lista de Desenvolvedoras" id="menuListaDesenvolvedoras" href="desenvolvedoras.php">Lista de Desenvolvedoras</a></li>
+            <li><a data-rel="prefetch" title="In Memoriam" id="memoriam" href="memoriam.php">In Memoriam</a></li>
+            <li><a data-rel="prefetch" title="Artigos e Notícias" id="menuArtigos" href="news.php">Artigos e Notícias</a></li>
+            <li><a data-rel="prefetch" title="Manuais" id="menuManuais" href="manuais.php">Manuais</a></li>
+            <li><a data-rel="prefetch" title="Matérias de Revistas" id="menuRevistas" href="materias-revistas.php">Matérias de Revistas</a></li>
+            <li><a data-rel="prefetch" title="Sobre Nós" id="menuSobre" href="sobre.php">Sobre Nós</a></li>
+            <li><button id="btnAleatorio" type="button" onclick="randomGame(29600);">Jogo Aleatório</button></li>
+        </ul>
+    </nav>
+
+    <div class="scrolltop" id="scrolltop"><img loading="lazy" width="25" height="25" alt='Voltar ao topo' src="img/arrow-up.svg" /></div>
+</header>
+
+<script>
+    // BUSCA
+    var inputBusca = document.getElementById("busca");
+
+    function buscajs() {
+        const inputBusca = document.getElementById("busca");
+        const btnBusca = document.getElementById("btnBusca");
+        const formBusca = document.getElementById("formBusca");
+
+        inputBusca.readOnly = true;
+        btnBusca.disabled = true;
+        btnBusca.innerHTML = "<img src='img/loading-yellow.svg' width='18' height='18' alt='Carregando busca' />";
+        formBusca.submit();
+    }
+
+    function getRandomInt(max) {
+        let num = Math.floor(Math.random() * max);
+        if (num == 0) {
+            num = 1;
+        }
+
+        return num;
+    }
+
+    function randomGame(num) {
+        const id = getRandomInt(num);
+        location.assign("jogo.php?id=" + id);
+    }
+
+    inputBusca.addEventListener("keydown", (event) => {
+        if (event.keyCode !== 13) {
+            return;
+        } else {
+            event.preventDefault();
+            if (!inputBusca.readOnly) {
+                buscajs();
+            }
+        }
+    });
+</script>
+    <div class="container-site">
+        <main id="main-content">
+            <div itemscope itemtype="https://schema.org/VideoGame">
+                <meta itemprop='image' content='https://bdjogos.com.br/capas/15616-stray-capa-1.jpg' />
+
+                <div class="caixa-cinza">
+                    <!-- TITULO DO JOGO -->
+                    <h1 itemprop='name' class="subtitulo">Stray</h1>
+                    
+                    <!-- CAPA DO JOGO -->
+                                        <div id="divCapaJogo" class="capa_jogo_tam clsNumCapas1">
+                                                    <div data-cod="1">
+                                <img class="lightCapa" src="capas/15616-stray-capa-1.jpg?v=20250823174444" width="1024" height="1024" alt="Capa do jogo Stray">
+                            </div>
+                                                </div>
+
+                    <!-- DESCRIÇÃO DO JOGO -->
+                    <div class="descricao_jogo">
+                        <p>Stray é um jogo de Aventura / Metroidvania desenvolvido pela BlueTwelve Studio e publicado pela Annapurna Interactive em 19 de julho de 2022  para PC, Playstation 4 e Playstation 5.</p><p> Produzido por Swann Martin-Raget, com direção de Colas Koola e Vivien Mermet-Guyenet, design por Alexandre Brodu e Hugo Dunas-Wald e Mathieu Audrain e músicas compostas por Yann Van der Cruyssen.</p>                    </div>
+
+                    <!-- SINOPSE DO JOGO -->
+                                    </div>
+
+                <div class="caixa-cinza">
+                    <!-- INFORMAÇÕES DO JOGO -->
+                    <h2 class='subtitulo'>Informações do Jogo</h2>
+                    
+                    <div id="info_jogo">
+                        <!-- DETALHES DO JOGO -->
+                        <div id="detalhes_jogo">
+                            <ul><li><strong>Publisher:</strong> <div class='dinline' itemprop='publisher' itemscope itemtype='https://schema.org/Organization'><a title='Link para a empresa Annapurna Interactive' itemprop='url' href='desenvolvedora.php?id=1053'><span itemprop='name'>Annapurna Interactive</span></a></div></li><li><strong>Desenvolvedora:</strong> <div class='dinline' itemprop='author' itemscope itemtype='https://schema.org/Organization'><span itemprop='name'><a itemprop='url' title='BlueTwelve Studio' href='desenvolvedora.php?id=2742'>BlueTwelve Studio</a></span></div></li>
+                            <li><strong>Plataforma:</strong> <a title='PC' href='console.php?id=14'><span itemprop='gamePlatform'>PC</span></a>, <a title='Playstation 4' href='console.php?id=19'><span itemprop='gamePlatform'>Playstation 4</span> / <span itemprop='gamePlatform'>PS4</span></a> e <a title='Playstation 5' href='console.php?id=48'><span itemprop='gamePlatform'>Playstation 5</span> / <span itemprop='gamePlatform'>PS5</span></a></li>
+
+                            <li><strong>Gênero:</strong> <a title="Link para a página com lista de jogos de Aventura / Metroidvania" href="genero.php?id=3"><span itemprop="genre">Aventura / Metroidvania</span></a></li>
+                                                        
+                            <li><strong>Ano:</strong> <a title='Lista de jogos do ano 2022' href='ano.php?y=2022'>2022</a></li><li><strong>Lançamento:</strong><meta itemprop='datePublished' content='2022-07-19' /> 19 de julho de 2022 </li></ul><h2 class='subtitulo mt-4'>Links do jogo</h2><ul><li><a rel='noopener' class='aita' title='Steam de Stray' itemprop='sameAs' target='_blank' href='https://store.steampowered.com/app/1332010/Stray/?utm_source=bd_jogos'>store.steampowered.com/app/1332010/Stray/?utm_source=bd_jogos</a></li><li><a rel='noopener' class='aita' title='Wikipedia de Stray' itemprop='sameAs' target='_blank' href='https://en.wikipedia.org/wiki/Stray_(video_game)'>en.wikipedia.org/wiki/Stray_(video_game)</a></li></ul><a itemprop='url' class='hidden' href='https://bdjogos.com.br/jogo.php?id=15616'>bd jogos</a><a itemprop='url' class='hidden' href='https://en.bdjogos.com.br/game.php?id=15616'>bd jogos english</a>                            <meta itemprop = "description" content="Stray é um jogo de Aventura / Metroidvania desenvolvido pela BlueTwelve Studio e publicado pela Annapurna Interactive em 19 de julho de 2022  para PC, Playstation 4 e Playstation 5., com direção de Colas Koola e Vivien Mermet-Guyenet, design por Alexandre Brodu e Hugo Dunas-Wald e Mathieu Audrain e músicas compostas por Yann Van der Cruyssen Produzido por Swann Martin-Raget"/>
+                        </div>
+
+                        <span><meta itemprop = "applicationCategory" content="Game"/></span>
+                        <span><meta itemprop = "operatingSystem" content="PC, Playstation 4 e Playstation 5"/></span>
+                    </div>
+                </div>
+
+                                    <div class='caixa-cinza'>
+                        <h2 class='subtitulo'>Steam</h2>
+                        <div class="container-steam">
+                            <iframe title="Página do Steam do jogo Stray" src="https://store.steampowered.com/widget/1332010/Stray/" width="646" height="190"></iframe>
+                        </div>
+                    </div>
+                    
+            <meta itemprop='screenshot' content='https://bdjogos.com.br/fotos/15616-stray-1.jpg' /><meta itemprop='screenshot' content='https://bdjogos.com.br/fotos/15616-stray-2.jpg' /><meta itemprop='screenshot' content='https://bdjogos.com.br/fotos/15616-stray-3.jpg' /><meta itemprop='screenshot' content='https://bdjogos.com.br/fotos/15616-stray-4.jpg' /><meta itemprop='screenshot' content='https://bdjogos.com.br/fotos/15616-stray-5.jpg' /><meta itemprop='screenshot' content='https://bdjogos.com.br/fotos/15616-stray-6.jpg' /><meta itemprop='screenshot' content='https://bdjogos.com.br/fotos/15616-stray-7.jpg' />                <div class='caixa-cinza'>
+                    <h2 class='subtitulo'>Imagens do Jogo</h2>
+                    <div class="foto_jogo_tam">
+                                                    <img loading="lazy" src="fotos/15616-stray-1.jpg" width="1280" height="720"
+                            alt="Foto do jogo Stray" class="imagemJogo">  
+                                                        <img loading="lazy" src="fotos/15616-stray-2.jpg" width="1280" height="720"
+                            alt="Foto do jogo Stray" class="imagemJogo">  
+                                                        <img loading="lazy" src="fotos/15616-stray-3.jpg" width="1280" height="720"
+                            alt="Foto do jogo Stray" class="imagemJogo">  
+                                                        <img loading="lazy" src="fotos/15616-stray-4.jpg" width="1280" height="720"
+                            alt="Foto do jogo Stray" class="imagemJogo">  
+                                                        <img loading="lazy" src="fotos/15616-stray-5.jpg" width="1280" height="720"
+                            alt="Foto do jogo Stray" class="imagemJogo">  
+                                                        <img loading="lazy" src="fotos/15616-stray-6.jpg" width="1280" height="720"
+                            alt="Foto do jogo Stray" class="imagemJogo">  
+                                                        <img loading="lazy" src="fotos/15616-stray-7.jpg" width="1280" height="720"
+                            alt="Foto do jogo Stray" class="imagemJogo">  
+                                                </div>
+                </div>
+                                <div class='caixa-cinza' id='pessoas_jogo'> 
+                    <h2 class='subtitulo'>Créditos</h2>
+
+                    <div class="container-pessoas-flex">
+
+                
+                        <div class="cargo-divisao-flex">Produtor</div>
+                        <div class="pessoa-divisao-flex">
+
+                                            <div class="dados-pessoa-flex-metade">
+                        <a class="imagem-pessoa-flex-oitenta" title="Sem foto" href="pessoa.php?id=136354">
+                            <img loading="lazy" width='80' height='80' alt='Sem foto' title='Sem foto' src='foto_perfil/desconhecido.svg'>
+                        </a>
+                        <div class="titulo-pessoa-flex">
+                              <div class='mesmalinha' itemprop='producer' itemscope itemtype='https://schema.org/Person'>                                <a  itemprop='url'  title="Swann Martin-Raget" href="pessoa.php?id=136354"> <span itemprop='name'>Swann Martin-Raget</span> </a>
+                            </div>                        </div><!-- titulo-pessoa-flex -->
+                    </div><!-- dados-pessoa-flex-metade -->
+
+                                            </div> <!-- FIM .pessoa-divisao-flex -->
+
+                        <div class="cargo-divisao-flex">Diretor</div>
+                        <div class="pessoa-divisao-flex">
+
+                                            <div class="dados-pessoa-flex-metade">
+                        <a class="imagem-pessoa-flex-oitenta" title="Sem foto" href="pessoa.php?id=136352">
+                            <img loading="lazy" width='80' height='80' alt='Sem foto' title='Sem foto' src='foto_perfil/desconhecido.svg'>
+                        </a>
+                        <div class="titulo-pessoa-flex">
+                             <div class='mesmalinha' itemprop='director' itemscope itemtype='https://schema.org/Person'>                                <a  itemprop='url'  title="Colas Koola" href="pessoa.php?id=136352"> <span itemprop='name'>Colas Koola</span> </a>
+                            </div>                        </div><!-- titulo-pessoa-flex -->
+                    </div><!-- dados-pessoa-flex-metade -->
+
+                                        <div class="dados-pessoa-flex-metade">
+                        <a class="imagem-pessoa-flex-oitenta" title="Sem foto" href="pessoa.php?id=136353">
+                            <img loading="lazy" width='80' height='80' alt='Sem foto' title='Sem foto' src='foto_perfil/desconhecido.svg'>
+                        </a>
+                        <div class="titulo-pessoa-flex">
+                             <div class='mesmalinha' itemprop='director' itemscope itemtype='https://schema.org/Person'>                                <a  itemprop='url'  title="Vivien Mermet-Guyenet" href="pessoa.php?id=136353"> <span itemprop='name'>Vivien Mermet-Guyenet</span> </a>
+                            </div>                        </div><!-- titulo-pessoa-flex -->
+                    </div><!-- dados-pessoa-flex-metade -->
+
+                                            </div> <!-- FIM .pessoa-divisao-flex -->
+
+                        <div class="cargo-divisao-flex">Programador</div>
+                        <div class="pessoa-divisao-flex">
+
+                                            <div class="dados-pessoa-flex-metade">
+                        <a class="imagem-pessoa-flex-oitenta" title="Sem foto" href="pessoa.php?id=136360">
+                            <img loading="lazy" width='80' height='80' alt='Sem foto' title='Sem foto' src='foto_perfil/desconhecido.svg'>
+                        </a>
+                        <div class="titulo-pessoa-flex">
+                                                            <a  title="Antonin Ferret" href="pessoa.php?id=136360"> Antonin Ferret </a>
+                                                    </div><!-- titulo-pessoa-flex -->
+                    </div><!-- dados-pessoa-flex-metade -->
+
+                                        <div class="dados-pessoa-flex-metade">
+                        <a class="imagem-pessoa-flex-oitenta" title="Sem foto" href="pessoa.php?id=136358">
+                            <img loading="lazy" width='80' height='80' alt='Sem foto' title='Sem foto' src='foto_perfil/desconhecido.svg'>
+                        </a>
+                        <div class="titulo-pessoa-flex">
+                                                            <a  title="Rémi Bismuth" href="pessoa.php?id=136358"> Rémi Bismuth </a>
+                                                    </div><!-- titulo-pessoa-flex -->
+                    </div><!-- dados-pessoa-flex-metade -->
+
+                                        <div class="dados-pessoa-flex-metade">
+                        <a class="imagem-pessoa-flex-oitenta" title="Sem foto" href="pessoa.php?id=136359">
+                            <img loading="lazy" width='80' height='80' alt='Sem foto' title='Sem foto' src='foto_perfil/desconhecido.svg'>
+                        </a>
+                        <div class="titulo-pessoa-flex">
+                                                            <a  title="Sores Hatipoglu" href="pessoa.php?id=136359"> Sores Hatipoglu </a>
+                                                    </div><!-- titulo-pessoa-flex -->
+                    </div><!-- dados-pessoa-flex-metade -->
+
+                                            </div> <!-- FIM .pessoa-divisao-flex -->
+
+                        <div class="cargo-divisao-flex">Designer</div>
+                        <div class="pessoa-divisao-flex">
+
+                                            <div class="dados-pessoa-flex-metade">
+                        <a class="imagem-pessoa-flex-oitenta" title="Sem foto" href="pessoa.php?id=136356">
+                            <img loading="lazy" width='80' height='80' alt='Sem foto' title='Sem foto' src='foto_perfil/desconhecido.svg'>
+                        </a>
+                        <div class="titulo-pessoa-flex">
+                                                            <a  title="Alexandre Brodu" href="pessoa.php?id=136356"> Alexandre Brodu </a>
+                                                    </div><!-- titulo-pessoa-flex -->
+                    </div><!-- dados-pessoa-flex-metade -->
+
+                                        <div class="dados-pessoa-flex-metade">
+                        <a class="imagem-pessoa-flex-oitenta" title="Sem foto" href="pessoa.php?id=136357">
+                            <img loading="lazy" width='80' height='80' alt='Sem foto' title='Sem foto' src='foto_perfil/desconhecido.svg'>
+                        </a>
+                        <div class="titulo-pessoa-flex">
+                                                            <a  title="Hugo Dunas-Wald" href="pessoa.php?id=136357"> Hugo Dunas-Wald </a>
+                                                    </div><!-- titulo-pessoa-flex -->
+                    </div><!-- dados-pessoa-flex-metade -->
+
+                                        <div class="dados-pessoa-flex-metade">
+                        <a class="imagem-pessoa-flex-oitenta" title="Sem foto" href="pessoa.php?id=136355">
+                            <img loading="lazy" width='80' height='80' alt='Sem foto' title='Sem foto' src='foto_perfil/desconhecido.svg'>
+                        </a>
+                        <div class="titulo-pessoa-flex">
+                                                            <a  title="Mathieu Audrain" href="pessoa.php?id=136355"> Mathieu Audrain </a>
+                                                    </div><!-- titulo-pessoa-flex -->
+                    </div><!-- dados-pessoa-flex-metade -->
+
+                                            </div> <!-- FIM .pessoa-divisao-flex -->
+
+                        <div class="cargo-divisao-flex">Compositor</div>
+                        <div class="pessoa-divisao-flex">
+
+                                            <div class="dados-pessoa-flex-metade">
+                        <a class="imagem-pessoa-flex-oitenta" title="Sem foto" href="pessoa.php?id=76548">
+                            <img loading="lazy" width='80' height='80' alt='Sem foto' title='Sem foto' src='foto_perfil/desconhecido.svg'>
+                        </a>
+                        <div class="titulo-pessoa-flex">
+                              <div class='mesmalinha' itemprop='musicBy' itemscope itemtype='https://schema.org/Person'>                                <a  itemprop='url'  title="Yann Van der Cruyssen" href="pessoa.php?id=76548"> <span itemprop='name'>Yann Van der Cruyssen</span> (Yann Van Der Cruyssen)</a>
+                            </div>                        </div><!-- titulo-pessoa-flex -->
+                    </div><!-- dados-pessoa-flex-metade -->
+
+                                            </div> <!-- FIM .pessoa-divisao-flex -->
+
+                        <div class="cargo-divisao-flex">Escritor</div>
+                        <div class="pessoa-divisao-flex">
+
+                                            <div class="dados-pessoa-flex-metade">
+                        <a class="imagem-pessoa-flex-oitenta" title="Sem foto" href="pessoa.php?id=136361">
+                            <img loading="lazy" width='80' height='80' alt='Sem foto' title='Sem foto' src='foto_perfil/desconhecido.svg'>
+                        </a>
+                        <div class="titulo-pessoa-flex">
+                                                            <a  title="Steven Lerner" href="pessoa.php?id=136361"> Steven Lerner </a>
+                                                    </div><!-- titulo-pessoa-flex -->
+                    </div><!-- dados-pessoa-flex-metade -->
+
+                                        </div> <!-- FIM .pessoa-divisao-flex -->
+                </div> <!-- FIM DIV CONTAINER FLEX PESSOAS -->
+            </div> <!-- CAIXA CINZA -->
+
+                        </div>
+        </main>
+
+        
+<aside>
+        
+    <!-- Promo BD Jogos -->
+    <div class="caixa-cinza">
+        <h3 class="subtitulo">Sugestão de Jogo</h3>
+
+        <a alt="Link para Ninshi Masuta no Steam" href="https://store.steampowered.com/app/1249680/Ninshi_Masuta/?utm_source=bd_jogos" rel="noopener" target="_blank">
+            <picture>
+                <source srcset="img/ninshi-masuta.webp" type="image/webp">
+                <img class='ninshi-masuta-img' width="620" height="283" src="img/ninshi.gif" alt="Link para Ninshi Masuta no Steam"  title="Conheça o Ninshi Masuta, demo disponível no Steam!">
+            </picture>
+        </a>
+
+        <p class="steam">
+            <a alt="Link para Ninshi Masuta no Steam" href="https://store.steampowered.com/app/1249680/Ninshi_Masuta/?utm_source=bd_jogos" rel="noopener" target="_blank">
+                Conheça Ninshi Masuta no Steam!<br>Demo disponível para download.            </a>
+        </p>
+    </div>
+
+    
+    <!--REDES SOCIAIS -->
+    <div class='caixa-cinza'>
+        <h3 class="subtitulo">Redes Sociais do BD Jogos</h3>
+        <div class="container-redes">
+            <a rel="noopener" title="Facebook do BD Jogos" id="logoFacebook" target="_blank" href="https://www.facebook.com/sitebdjogos/">
+                <img loading="lazy" title="Facebook do BD Jogos" alt="Link para facebook.com/sitebdjogos" width="50" height="50" src="img/facebook.svg">
+            </a>
+            <a rel="noopener" title="Youtube do BD Jogos" id="logoYoutube" target="_blank" href="https://www.youtube.com/@bdjogos">
+                <img loading="lazy" title="Youtube do BD Jogos" alt="Link para o youtube.com/@bdjogos" width="72" height="50" src="img/youtube.svg">
+            </a>
+            <a rel="noopener" title="Bluesky do BD Jogos" target="_blank" href="https://bsky.app/profile/bdjogos.com.br">
+                <img loading="lazy" title="Bluesky do BD Jogos" alt="Link para o Bluesky do BD Jogos" width="57" height="50" src="img/bluesky-logo.svg">
+            </a>
+        </div>
+    </div>
+
+    <!-- GOOGLE ADS -->
+    <div class="caixa-ad">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0032571642139206"
+        crossorigin="anonymous"></script>
+        <!-- Display Quadrado -->
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-0032571642139206"
+            data-ad-slot="6087320338"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+
+    <div class="caixa-ad">
+        <!-- MULTIPLEX -->
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0032571642139206"
+            crossorigin="anonymous"></script>
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-format="autorelaxed"
+            data-ad-client="ca-pub-0032571642139206"
+            data-ad-slot="8663428504"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+    
+</aside>    </div>
+
+    <dialog id="dialogImage">
+        <div id="containerImageDialog" class=""></div>
+    </dialog>
+
+        <div class="cookie ad" id="divAdCookie">
+        <div>
+            O BD Jogos usa cookies para personalizar publicidade que é entregue pelo Google Ads e analizar tráfego pelo Google Analytics. Ao utilizar nosso site, você está concordando com o uso deles.
+            Para maiories informações, acesse a <a rel="noopener" title="Politica de privacidade do Google Ads" target="_blank" href='https://policies.google.com/technologies/ads'>página de privacidade do Google</a> e <a rel="noopener" title="Privacidade e termos do Google" href="https://policies.google.com/technologies/cookies">Privacidade e termos do Google.</a>
+        </div>
+        <div>
+            <button id="CookieAceite">Aceitar</button>
+        </div>
+    </div>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-59K49M2V3V"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-59K49M2V3V', {
+            cookie_flags: 'max-age=7200;secure;SameSite=none'
+        });
+    </script>
+
+    <!-- Cloudflare Web Analytics -->
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "bfb56c30a84344c2a94d9f7f5c5fd354"}'></script>
+    <!-- End Cloudflare Web Analytics -->
+
+    <script>
+        var elem = document.getElementById("scrolltop");
+        elem.addEventListener("click", sctop);
+
+        function sctop() {
+            window.scrollTo(0, 0);
+        }
+
+        // COOKIES
+        var btnCookie = document.getElementById("CookieAceite");
+        var divAdCookie = document.getElementById("divAdCookie");
+
+        btnCookie.addEventListener("click", aceitapolitica);
+
+        function aceitapolitica() {
+            localStorage.setItem("politicaPrivacidade", "aceito");
+            divAdCookie.classList.remove("ativo");
+        }
+
+        if (localStorage.politicaPrivacidade != "aceito") {
+            divAdCookie.classList.add("ativo");
+        }
+
+        // PWA BUILDER
+        // Habilitador em Setembro por se tratar de uma nova versão offline.
+        if (typeof navigator.serviceWorker !== 'undefined') {
+            navigator.serviceWorker.register('sw-off.js')
+        }
+    </script>
+<script>
+    // EMBED YOUTUBE
+    const videos = document.querySelectorAll(".videoContent");
+
+    for (const video of videos) {
+        video.addEventListener('click', function(event) {
+            url = video.dataset.url;
+            iframe = "<iframe width='1280' height='720' src='https://www.youtube.com/embed/" + url + "?autoplay=1' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>";
+            video.innerHTML = iframe;
+        });
+    }
+
+    // Select all radio buttons with a specific name
+    const radios = document.querySelectorAll('input[name="color-scheme"]');
+
+    // Add a change event listener to each radio button
+    radios.forEach(radio => {
+        radio.addEventListener('change', (event) => {
+            tema = event.target.value;
+            salvaTema(tema);
+        });
+    });
+
+    function salvaTema(tema) {
+        const formData = new FormData();
+        formData.append('tema', tema);
+        
+        fetch('cookie_tema.php', {
+                method: 'POST',
+                body: formData,
+            })
+            .then((response) => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                return response.json(); // Parse JSON response
+            })
+            .then((data) => {
+                console.log('Success:', data); // Handle the response data
+            })
+            .catch((error) => {
+                console.error('Error:', error); // Handle errors
+            });
+
+    }
+</script>
+
+    <script>
+        const capas = document.querySelectorAll(".lightCapa");
+        const promos = document.querySelectorAll(".lightMaterial");
+
+        const dialog = document.getElementById("dialogImage");
+        const containerImage = document.getElementById("containerImageDialog");
+        
+        const imagens = document.querySelectorAll(".imagemJogo");
+
+        for (const capa of capas) {
+            capa.addEventListener('click', function(event) {
+                var bg = this.src;
+                dialog.showModal();
+                dialog.classList.add("dFlex");
+                containerImage.style.backgroundImage = "url('"+bg+"')";
+            })
+        }
+
+        for (const promo of promos) {
+            promo.addEventListener('click', function(event) {
+                var bg = this.src;
+                dialog.showModal();
+                dialog.classList.add("dFlex");
+                containerImage.style.backgroundImage = "url('"+bg+"')";
+            })
+        }
+
+        for (const imagem of imagens) {
+            imagem.addEventListener('click', function(event) {
+                var bg = this.src;
+                dialog.showModal();
+                dialog.classList.add("dFlex");
+                containerImage.style.backgroundImage = "url('"+bg+"')";
+            })
+        }
+
+        dialog.addEventListener("click", function(event) {
+            dialog.close();
+            dialog.classList.remove("dFlex");
+            containerImage.style.backgroundImage = "url('')";
+        })
+    </script>
+    <noscript>Habilite o javascript para o funcionamento de zoom nas capas e screenshots</noscript>
+</body>
+</html>

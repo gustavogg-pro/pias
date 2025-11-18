@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+ }
+ 
+ header{
+     background-color: brown;
+     height: auto;
+ }
+ body{
+    text-align: center;
+ }
+ main{
+     height: 1000px;
+     background-color: dimgray;
+ 
+ }
+ footer{
+   display: flex;
+   height: 250px;
+   color: white ;
+   background-color: black;
+}
+ .card{
+    /* border: red solid 2px; */
+    background-color: rgb(255, 255, 255);
+    height: auto;
+    width: 400px;
+    margin: 10px;
+    padding: 10px;
+    color: black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+ }
+ .card:hover{
+    box-shadow: inset 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+ }
+ .botao{
+    border: 2px red;
+    border-radius: 5px;
+    width: 200px;
+    color: red;
+    font-size: large;
+    
+ }
+ /* muda cor do botao e do texto */
+ 
+ .botao:hover{
+    color: white;
+    background-color: red;
+ }
+ .games{
+    background-color: dimgray;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+ }
+ .menu{
+    background-color: aliceblue;
+    padding: 15px;
+ }
+ .menu a{
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    transition: 0.9s;
+    padding: 5ṕx;
+ }
+ .menu a:hover{
+    color: black;
+    text-decoration: underline;
+    background-color: darkred;
+    border-radius: 3px;
+ }
+ 
+ .menu li{
+    display: inline;
+    padding: 25px;
+ }
+ .logo{
+    width: 210px;
+    border-radius: 25%;
+ }
+
+
+form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height:400px ;
+}
+.logocada{
+   display: flex;
+   width: 150px;
+   align-items: center;
+   justify-content: center;
+}
+.oruam{
+   display: flex;
+   justify-content: center;
+   padding: 200px;
+}
+.pers{
+   height: 20px;
+   padding: 12px;
+   margin: 13px;
+}
+.pers2{
+   height: 50px;
+   padding: 10px;
+   margin: 7px;
+}
+.letra{
+   font-family:Arial, Helvetica, sans-serif;
+}
+.carrinho{
+   display: flex;
+   width: 55px;
+   margin-left: 1840px;
+   padding: 5px;
+   position: relative;
+   top: -130px;
+}
